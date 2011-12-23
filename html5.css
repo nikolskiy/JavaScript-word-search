@@ -1,0 +1,21 @@
+/* 
+    Document   : html5
+    Created on : Dec 19, 2011, 7:33:41 PM
+*/
+
+
+#jtext
+{
+    list-style-type: none;
+}
+
+#jtext a
+{
+    text-decoration: none;
+    
+}
+
+#jtext li
+{
+    padding: 5px 0;
+}
