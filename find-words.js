@@ -36,6 +36,8 @@ function loadDict( dictURL )
 function dictReady(dict)
 {
     gameDict = dict;
+    $('#loadDictMsg').hide();
+    $('#inputArea').show();
 }
 
 // take user provided letters and find all matching words

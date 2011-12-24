@@ -1,21 +1,21 @@
 /* 
-    Document   : html5
+    Document   : html5.css
     Created on : Dec 19, 2011, 7:33:41 PM
 */
 
 
-#jtext
+#jwords
 {
     list-style-type: none;
 }
 
-#jtext a
+#jwords a
 {
     text-decoration: none;
     
 }
 
-#jtext li
+#jwords li
 {
     padding: 5px 0;
 }
