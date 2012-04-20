@@ -1,0 +1,18 @@
+Creative Commons CC BY-NC-SA license.
+
+Trie dictionary word search
+
+The idea of the project is to find all possible words from given letters in a given word dictionary.
+
+Project summary:
+Trie structure enables words to be found from given letters very fast. HTML GUI and JavaScript allows us to run the word search on most systems, even phones and tablets.
+
+Usage:
+
+This word search works in most browsers that support JavaScript.
+
+Download the project. Substitute dict.txt with your list of words. Each word must be separated by a new line. Convert the text dictionary to JSON trie dictionary by running txt2trieDictConvert.py (python txt2trieDictConvert.py dict.txt). Open html5.html with a browser (was tested with Firefox). Enter letters in the search box and press Submit Query.
+Note: Chrome will not load JavaScript locally with default security settings.
+The project can be easily deployed on a server. The following files should be copied to the server directory: dict.js, find-words.js, jquery-1.7.min.js, html5.html, and html5.css.
+
+
