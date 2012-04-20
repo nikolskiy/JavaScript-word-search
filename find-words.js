@@ -1,6 +1,10 @@
 
 /*
  * find-words.js
+ * 
+ * This script loads a trie dictionary in JSON form,
+ * reads user provided letters, and outpust all possible
+ * words from those letters that can be found in the dictionary. 
  *
  */
  
@@ -114,7 +118,11 @@ function displayResult( words )
     words.sort(sortByLength);
     for(var ii in words)
         {
-            $('#jwords').append("<li><a href='http://www.google.com/search?q=define+"+words[ii] +"' target='_blank'>" + words[ii] + "</a></li>");
+            $('#jwords').append("<li><a href='http://www.google.com/search?q=define+"
+                                 + words[ii] +
+                                 "' target='_blank'>" 
+                                 + words[ii] + 
+                                 "</a></li>");
         }
 }
 
