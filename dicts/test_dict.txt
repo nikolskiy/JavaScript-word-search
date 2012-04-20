@@ -1,5 +1,0 @@
-hello
-hellobar
-hellofoo
-bar
-hello
