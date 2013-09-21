@@ -49,7 +49,9 @@ function findWords()
 {
     cleanSearchResult();
     // get letters, remove none letter characters, and split them into an array
-    var lettersArray = $('#letters').val().replace(/\W+/g,"").split("");
+    // var lettersArray = $('#letters').val().replace(/\W+/g,"").split("");
+    // removed regex in order not to filter unicode characters
+    var lettersArray = $('#letters').val().split(""); 
     
     $('#jmsg').append("<p>" + "Given letters: "+ lettersArray + "</p>");
     

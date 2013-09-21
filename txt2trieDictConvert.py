@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
 import argparse # for command line argument parsing
-import os.path   # for path manipulation
-import sys         # for script exit
+import os.path  # for path manipulation
+import sys      # for script exit
+import codecs   # for unicode (utf-8) support
 
 class TrieNode:
     def __init__(self, char, childrenList, complete=False):
@@ -130,7 +131,7 @@ def main():
     # create an instance of our trie
     trie = Trie()
     
-    with open(file_path, "r") as f:
+    with codecs.open(file_path, "r", "utf-8") as f:
         print 'Adding words to the trie ...'
         numOfWords = 0
         for line in f:
@@ -147,7 +148,7 @@ def main():
     
     dictJSpath = os.path.join(dir_name, dictJSname)
     
-    with open(dictJSpath, "w") as fw:
+    with codecs.open(dictJSpath, "w", "utf-8") as fw:
         print 'Constructing %s file ...' % dictJSname 
         fw.write('{')
         nodePosition = 0
